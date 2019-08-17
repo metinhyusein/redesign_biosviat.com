@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Биосвят</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href ="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/jquery-ui.min.css">
+	<link rel ="stylesheet" href ="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+<body>
+
+  <div class="preloder">
+    <img src="images/logo.png" alt="logo" title="logo">
+  </div>
+
+  <div id="popup">
+    <div id="popbox">
+      <p>Биосвят</p>
+      <span>Регистрирай се и трупай бонус точки при всяка покупка</span>
+
+      <form action="#" id="reg">
+        <input type="text" name="firstname" placeholder="Име"><br>
+        <input type="text" name="lastname" placeholder="Фамилия"><br>
+        <input type="password" name="pass" id="pass" placeholder="Парола"><br>
+        <input type="password" name="passcom" placeholder="потвърди парола"><br>
+        <input type="email" name="email" placeholder="Имейл"><br>
+        <label>Искам да получвам седмичен бюлетин<input type="checkbox" name="bul"></label><br>
+        <input type="submit" value="Регистрация">
+        <p id="popex">Затвори</p>
+      </form>
+    </div>
+  </div>
+
+  <img id="srolltop" src="images/icons/scrolltop.png" alt="srolltop" title="Начало">
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="biosviat.html">
+						<img src="images/logo.png" alt="logo" title="logo" id="logo">
+          </a>
+          <div id="float">
+					 <div class=cont>
+						  <p>02 955 95 01/0876015003</p>
+						  <a href="https://www.facebook.com/">
+              <img id="face" src="images/icons/facebook.png" alt="facebook.png" title="face">
+              </a>
+						  <a href="https://www.instagram.com/?hl=bg">
+                <img id="insta" src="images/icons/instagram.png" alt="instagram.png" title="insta">
+              </a>
+					 </div>
+
+            <div id="down">
+              <img src="images/icons/loupe.png" alt="loupe" title="loupe">
+  						<input id="fin" type="text" name="search" placeholder="Търси...">
+              <img src="images/icons/en.png" alt="en" title="en.png">
+              <img src="images/icons/euro.png" alt="euro.png" title="euro.png">
+              <div id="pro" class="dropdown">
+                <img id="tog" src="images/icons/profile.png" alt="profile.png" title="profile.png">
+                <span>Профил</span>
+                <form id="login" action="#">
+                  <input type="email" name="email" placeholder="Имейл">
+                  <input type="text" name="password" placeholder="Парола">
+                  <input type="submit" value="Вход">
+                  <a href="#">Забравена парола</a>
+                  <a href="#">Регистрация</a>
+                </form>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="top">
+				<nav class="navbar navbar-inverse">
+  					<div class="container-fluid">
+    					<ul class="nav navbar-nav hid" id="stk">
+      						<li class="active">
+                    <a href="biosviat.html" class="bio">
+                      <h1>Биосвят</h1>
+                    </a>
+                  </li>
+      						<li class="dropdown">
+                    <a class="dropdown-toggle bio" data-toggle="dropdown" href="#" id="dp">Продукти
+                      <span class="caret"></span>
+                    </a>
+
+        						<ul class="dropdown-menu">
+          							<li><a href="#">Зърнени храни</a></li>
+          							<li><a href="#">Плодове и зеленчуци</a></li>
+          							<li><a href="#">Бебешки храни</a></li>
+          							<li><a href="#">Консерви и буркани</a></li>
+          							<li><a href="#">Десерти</a></li>
+        						</ul>
+      						</li>
+      						<li><a href="#" class="bio">Блог</a></li>
+      						<li><a href="#" class="bio">Контакти</a></li>
+    					</ul>
+      			 <div id="cart">
+      			   <span>Продукти / 0 / - 0,00лв.</span>		
+      			 </div>
+             <a href="javascript:void(0);" class="ham">&#9776;</a>
+            </div>
+        </nav>
+      </div>
+    </div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+	</div>
+	
+	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+  	<ol class="carousel-indicators">
+    	<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    	<li data-target="#carousel-example" data-slide-to="1"></li>
+    	<li data-target="#carousel-example" data-slide-to="2"></li>
+  	</ol>
+		<div class="carousel-inner">
+    		<div class="item active" id="veg">
+      			<a href="#" ><img src="images/veg.jpg" alt="veg" ><button class="btn">КУПИ СЕГА</button></a>
+    		</div>
+    		<div class="item">
+      			<a href="#"><img src="images/aloe.jpg" alt="aloe.jpg" /></a>
+    		</div>
+    		<div class="item">
+      			<a href="#"><img src="images/soya.jpg"  alt="soya.jpg" /></a>
+    		</div>
+  		</div>
+  		<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    		<span class="glyphicon glyphicon-chevron-left"></span>
+  		</a>
+  		<a class="right carousel-control" href="#carousel-example" data-slide="next">
+    		<span class="glyphicon glyphicon-chevron-right"></span>
+  		</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel">
+
+          <nav>
+            <ul class="control-box pager">
+              <li><a data-slide="prev" href="#myCarousel" class=""><input type="image" src="images/icons/left.png"></a></li>
+              <li><img src="images/icons/Asset 3top.png" alt="top"></li>
+              <li><a data-slide="next" href="#myCarousel" class=""><input type="image" src="images/icons/right.png"></a></li>
+            </ul>
+            <div class="lr">
+              <p>Топ оферти</p>
+            </div>
+          </nav>
+          
+          <div class="carousel-inner">
+            <div class="item active">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/musli.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div>
+                    <div class="vie">  
+                      <p>Хрупкави перли, без глутен, без лактоза, без яйца, веган 75г</p>
+                    </div>
+                    <span class="price">6,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/kara.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шоколадово-карамелен флейкс без глутен, без яйца 145г</p>
+                    </div>
+                    <span class="price">10,20лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/shaf.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шафран 1 гр, Greek Krokos Kozanis</p>
+                    </div>
+                    <span class="price">14,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/korn.jpg" alt="korn.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Царевични сухари мини без глутен 100г</p>
+                    </div>
+                    <span class="price">7,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+            
+            <div class="item">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/shaf.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шафран 1 гр, Greek Krokos Kozanis</p>
+                    </div>
+                    <span class="price">14,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/musli.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div>
+                    <div class="vie">
+                      <p>Хрупкави перли, без глутен, без лактоза, без яйца, веган 75г</p>
+                    </div>
+                    <span class="price">6,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/kara.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шоколадово-карамелен флейкс без глутен, без яйца 145г</p>
+                    </div>
+                    <span class="price">10,20лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/korn.jpg" alt="korn.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Царевични сухари мини без глутен 100г</p>
+                    </div>
+                    <span class="price">7,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="split">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel slide" id="myCarousel2">
+
+          <nav>
+            <ul class="control-box pager">
+              <li><a data-slide="prev" href="#myCarousel2" class=""><input type="image" src="images/icons/left.png"></a></li>
+              <li><img src="images/icons/popular.png" alt="top"></li>
+              <li><a data-slide="next" href="#myCarousel2" class=""><input type="image" src="images/icons/right.png"></a></li>
+            </ul>
+            <div class="lr">
+              <p>Популярни</p>
+            </div>
+          </nav>
+          
+          <div class="carousel-inner">
+            <div class="item active">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/soda.jpg" alt="soda.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div>
+                    <div class="vie">
+                      <p>Сода бикарбонат без глутен, без алуминий 200 гр</p>
+                    </div>
+                    <span class="price">4,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/cola.jpg" alt="cola.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Био Кола със сироп от Агаве 330 мл КЕН</p>
+                    </div>
+                    <span class="price">2,20лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/sok.jpg" alt="sok.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Натурален сок от Червена боровинка 330 мл</p>
+                    </div>
+                    <span class="price">8,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/koko.jpg" alt="koko.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Кокосова напитка натурална с Калций 1л КОКО</p>
+                    </div>
+                    <span class="price">5,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+            
+            <div class="item">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/shaf.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шафран 1 гр, Greek Krokos Kozanis</p>
+                    </div>
+                    <span class="price">14,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/musli.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div> 
+                    <div class="vie">
+                      <p>Хрупкави перли, без глутен, без лактоза, без яйца, веган 75г</p>
+                    </div>
+                    <span class="price">6,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/kara.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шоколадово-карамелен флейкс без глутен, без яйца 145г</p>
+                    </div>
+                    <span class="price">10,20лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/korn.jpg" alt="korn.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Царевични сухари мини без глутен 100г</p>
+                    </div>
+                    <span class="price">7,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="split">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="carousel slide" id="myCarousel3">
+
+          <nav>
+            <ul class="control-box pager">
+              <li><a data-slide="prev" href="#myCarousel3" class=""><input type="image" src="images/icons/left.png"></a></li>
+              <li><img src="images/icons/last.png" alt="last.png"></li>
+              <li><a data-slide="next" href="#myCarousel3" class=""><input type="image" src="images/icons/right.png"></a></li>
+            </ul>
+            <div class="lr">
+              <p>Поледно добавени</p>
+            </div>
+          </nav>
+          
+          <div class="carousel-inner">
+            
+            <div class="item active">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/soda.jpg" alt="soda.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div>
+                    <div class="vie">
+                      <p>Сода бикарбонат без глутен, без алуминий 200 гр</p>
+                    </div>
+                    <span class="price">4,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/cola.jpg" alt="cola.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Био Кола със сироп от Агаве 330 мл КЕН</p>
+                    </div>
+                    <span class="price">2,20лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+            
+            <div class="item">
+              <ul class="thumbnails">
+                
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/shaf.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>  
+                    </div>
+                    <div class="vie">
+                      <p>Шафран 1 гр, Greek Krokos Kozanis</p>
+                    </div>
+                    <span class="price">14,50лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="col-sm-3">
+                  <div class="box">
+                    <div class="blur">
+                      <img class="blurimg" src="images/musli.jpg" alt="musli.jpg">
+                      <div class="overlay">
+                        <img src="images/icons/star.png" alt="star.png" title="star.png">
+                        <img src="images/icons/eye.png" alt="eye.png" title="star.png">
+                      </div>
+                    </div> 
+                    <div class="vie">
+                      <p>Хрупкави перли, без глутен, без лактоза, без яйца, веган 75г</p>
+                    </div>
+                    <span class="price">6,35лв.</span>
+                    <div class="buy">
+                      <span>Купи</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" id="ban">
+          <a href="#">
+            <img id="banner" src="images/Banner.gif" alt="banner">
+          </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="split">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="blog">
+          <div class="blogimg">
+            <a href="#"><img src="images/med.jpg" alt="med.jpg"></a>
+          </div>
+          <div class="text">
+            <div class="p">
+              <p>Лъжица пчелен мед за добро здраве</p>
+            </div>
+            <a href="#"><img src="images/icons/com.png" alt="com.png"></a>
+            <a href="#"><img src="images/icons/vij.png" alt="vij.png"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="blog">
+          <div class="blogimg">
+            <a href="#"><img src="images/gluten.jpg" alt="gluten.jpg"></a>
+          </div>
+          <div class="text">
+            <div class="p">
+              <p>Безглутенови храни Schnitzer с немско качество</p>
+            </div>
+            <a href="#"><img src="images/icons/com.png" alt="com.png"></a>
+            <a href="#"><img src="images/icons/vij.png" alt="vij.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Контакти</h3>
+          <p id="tel">02 955 95 01/0876015003</p>
+          <p id="mail">biosviat@gmail.com</p>
+          <p id="adr"><София, бул. Самоковско шосе 2Л, ТЦ Боила/p>
+        </div>
+
+        <div class="col-md-3">
+          <h3>Моят профил</h3>
+          <p>Любими</p>
+          <p>Хронология на поръчки</p>
+          <p>Седмичен бюлетин</p>
+        </div>
+
+        <div class="col-md-3" id="find">
+          <h3>Абонирай се</h3>
+          <span>за седмичния ни бюлетин</span>
+          <form action="/action_page.php">
+            <input type="email" name="email" placeholder="Имейл">
+            <input type="submit" value="">
+          </form>
+          <h3>Намери ни в</h3>
+          <a href="https://www.facebook.com/">
+            <img src="images/icons/face.png" alt="face.png">
+          </a>
+          <a href="https://plus.google.com/discover">
+            <img src="images/icons/google-plus.png" alt="google-plus.png">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="images/icons/instagram2.png" alt="instagram2.png">
+          </a>
+          <a href="https://twitter.com/login?lang=bg">
+            <img src="images/icons/twitter.png" alt="twitter.png">
+          </a>
+          <a href="https://www.pinterest.com/">
+            <img src="images/icons/pinterest.png" alt="pinterest.png">
+          </a>
+        </div>
+
+        <div class="col-md-3" id="pay">
+          <h3>Плащане</h3>
+          <img src="images/icons/visa-pay-logo.png" alt="visa">
+          <img src="images/icons/master-card-logo.png" alt="master">
+          <img src="images/icons/paypal-logo.png" alt="paypal">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.linkunderanim.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="js/myjs.js"></script>
+</body>
+
+</html>
+              
+
+ 
